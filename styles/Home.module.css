@@ -1,0 +1,19 @@
+.base {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--home-background);
+  color: #ab8e5c;
+  display: flex;
+}
+.left {
+  width: 60%;
+}
+.right {
+  width: 40%;
+}
+
+@media (max-width: 780px) {
+  .base {
+    background-color: yellow;
+  }
+}
