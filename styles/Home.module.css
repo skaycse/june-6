@@ -4,12 +4,59 @@
   background-color: var(--home-background);
   color: #ab8e5c;
   display: flex;
+  position: relative;
+}
+.decoratedBorder1,
+.decoratedBorder2,
+.decoratedBorder3,
+.decoratedBorder4 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
 }
 .left {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .right {
   width: 40%;
+  border-left: 0.1px solid #ab8e5c66;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+}
+.rightTitle {
+  font-size: 50px;
+  margin-bottom: 35px;
+}
+.venue {
+  margin-bottom: 50px;
+}
+.groomBrideBase {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.groomTitle {
+  font-size: 50px;
+}
+.heartImageBase {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+.ambersand {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 700;
 }
 
 @media (max-width: 780px) {
