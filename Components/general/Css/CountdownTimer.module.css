@@ -1,0 +1,21 @@
+.base {
+}
+.timeBoxRow {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 20px;
+}
+.timeBox {
+  background-color: #656668cc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 35px;
+  padding: 10px;
+}
+.timeLabel {
+  font-size: 30px;
+}
