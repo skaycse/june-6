@@ -1,7 +1,7 @@
 export const VENUE_DATE = 1654453800000;
 
 export function CountDownTimer(countDownDate) {
-  const x = setInterval(() => {
+  const timerInterval = setInterval(() => {
     // Get today's date and time
     const now = new Date().getTime();
 
@@ -18,7 +18,7 @@ export function CountDownTimer(countDownDate) {
 
     // If the count down is finished
     if (distance < 0) {
-      clearInterval(x);
+      clearInterval(timerInterval);
       return { distance: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
 
