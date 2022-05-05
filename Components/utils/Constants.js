@@ -1,4 +1,4 @@
-export const VENUE_DATE = 1654453800000;
+export const VENUE_DATE = '2022-06-06T00:00:00-06:30';
 export const GROOM_NAME = "Sreekumar";
 export const BRIDE_NAME = "Amrutha";
 export const IMAGE_PATH = "/assets/images/"
