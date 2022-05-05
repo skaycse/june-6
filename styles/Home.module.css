@@ -6,20 +6,13 @@
   display: flex;
   position: relative;
 }
-.decoratedBorder1,
-.decoratedBorder2,
-.decoratedBorder3,
-.decoratedBorder4 {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-}
 .left {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .right {
   width: 40%;
@@ -27,7 +20,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 70px;
+  padding: 0 70px;
+  z-index: 1;
 }
 .rightTitle {
   font-size: 50px;
@@ -42,7 +36,7 @@
   column-gap: 30px;
 }
 .groomTitle {
-  font-size: 50px;
+  font-size: clamp(18px, 4vw, 50px);
 }
 .heartImageBase {
   position: relative;
@@ -58,9 +52,49 @@
   font-size: 30px;
   font-weight: 700;
 }
-
+.buttonBase {
+  margin-top: 50px;
+  max-width: 250px;
+  width: 50%;
+}
 @media (max-width: 780px) {
   .base {
-    background-color: yellow;
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    height: 65vh;
+  }
+  .right {
+    width: 100%;
+    height: 35vh;
+    align-items: center;
+    padding: 20px;
+    background-color: #ab8e5c21;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid;
+  }
+  .groomBrideBase {
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  .heartImageBase {
+    width: 50px;
+    height: 50px;
+  }
+  .ambersand {
+    font-size: 20px;
+  }
+  .venue {
+    margin-bottom: 35px;
+    font-size: 28px;
+  }
+  .buttonBase {
+    margin-top: 35px;
+  }
+
+  .rightTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 }

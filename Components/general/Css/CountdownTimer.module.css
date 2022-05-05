@@ -19,3 +19,21 @@
 .timeLabel {
   font-size: 30px;
 }
+
+@media (max-width: 780px) {
+  .base {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .timeBoxRow {
+    column-gap: 5px;
+    margin: 0;
+  }
+  .timeBox {
+    font-size: 20px;
+  }
+  .timeLabel {
+    font-size: 14px;
+  }
+}

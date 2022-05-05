@@ -5,7 +5,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  --primary-color: #000;
+  --primary-color: #ab8e5c;
+  --text-color: #232426;
   --primary-color-light: #efefef;
   --home-background: #232426;
   --gold-color: #ab8e5c;
