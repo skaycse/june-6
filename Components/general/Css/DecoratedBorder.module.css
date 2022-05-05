@@ -1,0 +1,10 @@
+.decoratedBorderBase {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.decoratedBorder {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
