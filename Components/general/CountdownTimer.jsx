@@ -7,18 +7,17 @@ export default function CountdownTimer() {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0
+    seconds: 0,
   });
   useEffect(() => {
     const timerInterval = setInterval(() => {
       const { distance, days, hours, minutes, seconds } =
         CountDownTimer(1654453800000);
-      console.log("Interval", distance, days, hours, minutes, seconds);
       setTimeLeft({
         days,
         hours,
         minutes,
-        seconds
+        seconds,
       });
       if (distance <= 0) {
         console.log("Finished");
