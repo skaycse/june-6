@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import Button from "../general/Button";
 import CountdownTimer from "../general/CountdownTimer";
@@ -9,10 +10,13 @@ import {
   IMAGE_PATH,
   VENUE_DATE,
 } from "../utils/Constants";
+import { RSVP } from "../utils/RouteUrls";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <main className={styles.base}>
+    <div className={styles.base}>
       <DecoratedBorder />
 
       <div className={styles.left}>
@@ -27,13 +31,13 @@ export default function Home() {
         </div>
 
         <div className={styles.buttonBase}>
-          <Button text={"RSVP NOW"} />
+          <Button text={"RSVP NOW"} onClick={() => router.push(RSVP)} />
         </div>
       </div>
       <div className={styles.right}>
         <h1 className={styles.rightTitle}>Begins in...</h1>
         <CountdownTimer />
       </div>
-    </main>
+    </div>
   );
 }
