@@ -5,8 +5,8 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Wedding Invitation</title>
-        <meta name="description" content="Wedding invitation home" />
+        <title>Sreekumar's Wedding Invitaion </title>
+        <meta name="description" content="Sreekumar's Wedding Invitaion" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

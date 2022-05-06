@@ -30,9 +30,9 @@ export default function Home() {
           <h1 className={styles.groomTitle}>{BRIDE_NAME}</h1>
         </div>
 
-        <div className={styles.buttonBase}>
+        {/* <div className={styles.buttonBase}>
           <Button text={"RSVP NOW"} onClick={() => router.push(RSVP)} />
-        </div>
+        </div> */}
       </div>
       <div className={styles.right}>
         <h1 className={styles.rightTitle}>Begins in...</h1>
