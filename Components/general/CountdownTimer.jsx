@@ -1,27 +1,29 @@
 import React, { useState, useEffect } from "react";
-import { CountDownTimer } from "../utils/Constants";
+import { CountDownTimer, VENUE_DATE } from "../utils/Constants";
 import styles from "./Css/CountdownTimer.module.css";
 
-export default function CountdownTimer() {
+export default function CountdownTimer({ time, onFinished = false }) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0,
+    seconds: 0
   });
+
   useEffect(() => {
     const timerInterval = setInterval(() => {
-      const { distance, days, hours, minutes, seconds } =
-        CountDownTimer(1654453800000);
+      const { distance, days, hours, minutes, seconds } = CountDownTimer(
+        new Date(VENUE_DATE) || new Date()
+      );
       setTimeLeft({
         days,
         hours,
         minutes,
-        seconds,
+        seconds
       });
       if (distance <= 0) {
-        console.log("Finished");
         clearInterval(timerInterval);
+        if (onFinished) onFinished();
       }
     }, 1000);
 

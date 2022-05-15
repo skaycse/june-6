@@ -1,8 +1,9 @@
-export const VENUE_DATE = "2022-06-06T00:00:00-06:30";
+export const VENUE_DATE = "2022-05-15T00:00:00-06:30";
 export const VENUE_DURATION = 2 * 60 * 60 * 1000; // 2hours
 export const GROOM_NAME = "Sreekumar";
 export const BRIDE_NAME = "Amrutha";
 export const VENUE_LOCATION = "";
+export const LIVE_VIDEO_LINK = "https://www.youtube.com/embed/c_mTxy4U7-g";
 
 export const IMAGE_PATH = "/assets/images/";
 

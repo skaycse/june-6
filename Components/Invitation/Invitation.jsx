@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
 import invitationStyles from "../../styles/Invitation.module.css";
-import CountdownTimer from "../general/CountdownTimer";
+import RightBox from "../CoreComponents/RightBox";
 import DecoratedBorder from "../general/DecoratedBorder";
 import { BRIDE_NAME, GROOM_NAME, IMAGE_PATH } from "../utils/Constants";
 
@@ -82,19 +82,9 @@ export default function Invitation() {
             <p>from 5:00pm to 6:00pm</p>
           </div>
         </div>
-
-        {/* <h2>Hey {userName && userName}</h2>
-        <h3>
-          You're Invited to our wedding{" "}
-          <span>{family && "with your family"}</span>
-        </h3>
-        <h4>Register below to let me know you're attending the event</h4> */}
       </div>
 
-      <div className={styles.right}>
-        <h1 className={styles.rightTitle}>Begins in...</h1>
-        <CountdownTimer />
-      </div>
+      <RightBox />
     </div>
   );
 }

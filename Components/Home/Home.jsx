@@ -1,20 +1,15 @@
 import Image from "next/image";
-import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
-import Button from "../general/Button";
-import CountdownTimer from "../general/CountdownTimer";
+import RightBox from "../CoreComponents/RightBox";
 import DecoratedBorder from "../general/DecoratedBorder";
 import {
   BRIDE_NAME,
   GROOM_NAME,
   IMAGE_PATH,
-  VENUE_DATE,
+  VENUE_DATE
 } from "../utils/Constants";
-import { RSVP } from "../utils/RouteUrls";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <div className={styles.base}>
       <DecoratedBorder />
@@ -30,10 +25,8 @@ export default function Home() {
           <h1 className={styles.groomTitle}>{BRIDE_NAME}</h1>
         </div>
       </div>
-      <div className={styles.right}>
-        <h1 className={styles.rightTitle}>Begins in...</h1>
-        <CountdownTimer />
-      </div>
+
+      <RightBox />
     </div>
   );
 }
