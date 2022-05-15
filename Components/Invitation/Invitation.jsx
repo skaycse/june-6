@@ -3,7 +3,12 @@ import styles from "../../styles/Home.module.css";
 import invitationStyles from "../../styles/Invitation.module.css";
 import RightBox from "../CoreComponents/RightBox";
 import DecoratedBorder from "../general/DecoratedBorder";
-import { BRIDE_NAME, GROOM_NAME, IMAGE_PATH } from "../utils/Constants";
+import {
+  BRIDE_NAME,
+  GROOM_NAME,
+  IMAGE_PATH,
+  VENUE_LOCATION
+} from "../utils/Constants";
 
 export default function Invitation() {
   const [userName, setUserName] = useState(false);
@@ -68,12 +73,15 @@ export default function Invitation() {
             <p>On Monday, June 06, 2022</p>
           </div>
 
-          <div className={invitationStyles.locationRow}>
+          <div
+            className={invitationStyles.locationRow}
+            onClick={() => window.open(VENUE_LOCATION, "_blank")}
+            style={{ cursor: "pointer" }}
+          >
             <div className={invitationStyles.locationIcon}>
               <img src={IMAGE_PATH + "location.svg"} />
             </div>
-            <p>At Sree Shanmukha Mandapam,
-              Nayarangadi</p>
+            <p>At Sree Shanmukha Mandapam, Nayarangadi</p>
           </div>
 
           <div className={invitationStyles.locationRow}>
