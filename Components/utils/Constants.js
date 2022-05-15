@@ -1,7 +1,10 @@
-export const VENUE_DATE = '2022-06-06T00:00:00-06:30';
+export const VENUE_DATE = "2022-06-06T00:00:00-06:30";
+export const VENUE_DURATION = 2 * 60 * 60 * 1000; // 2hours
 export const GROOM_NAME = "Sreekumar";
 export const BRIDE_NAME = "Amrutha";
-export const IMAGE_PATH = "/assets/images/"
+export const VENUE_LOCATION = "";
+
+export const IMAGE_PATH = "/assets/images/";
 
 export function CountDownTimer(countDownDate) {
   // Get today's date and time
