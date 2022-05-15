@@ -27,7 +27,7 @@ export default function Invitation() {
       <div className={styles.left}>
         <div className={invitationStyles.invitationBase}>
           <p className={invitationStyles.parents}>
-            Mr. A Madhavan and Mrs. Sathy Madhavan <br />
+            Mr. A. Madhavan and Mrs. Sathy Madhavan, <br />
             Sreenilayam, Edakkatil House, Nayarangadi, P.O. Kallur <br />
             Mob: 9211015478 <br />
             <span className={invitationStyles.inviteMsg}>
@@ -38,7 +38,7 @@ export default function Invitation() {
                 "your "
               )}
               esteemed presence {family && "with family"} on the auspicious
-              ocassion of the wedding ceremony of our son
+              occasion of the wedding ceremony of our son
             </span>
           </p>
 
@@ -54,7 +54,7 @@ export default function Invitation() {
             className={invitationStyles.parents}
             style={{ textAlign: "right", alignSelf: "end" }}
           >
-            D/o Mr. P Mohandas and Mrs. Kumari Mohandas <br />
+            D/o Mr. P. Mohandas and Mrs. Kumari Mohandas, <br />
             Perumbily House, PO Kallur <br />
             {/* Mob: 99999999 */}
           </p>
@@ -65,14 +65,14 @@ export default function Invitation() {
             <div className={invitationStyles.locationIcon}>
               <img src={IMAGE_PATH + "calendar.svg"} />
             </div>
-            <p>On Monday,June 06, 2022</p>
+            <p>On Monday, June 06, 2022</p>
           </div>
 
           <div className={invitationStyles.locationRow}>
             <div className={invitationStyles.locationIcon}>
               <img src={IMAGE_PATH + "location.svg"} />
             </div>
-            <p>at Sree Shanmukha Mandapam
+            <p>At Sree Shanmukha Mandapam,
               Nayarangadi</p>
           </div>
 
@@ -80,7 +80,7 @@ export default function Invitation() {
             <div className={invitationStyles.locationIcon}>
               <img src={IMAGE_PATH + "clock.svg"} />
             </div>
-            <p>from 9:00am to 10:00am</p>
+            <p>From 9:00 a.m. to 10:00 a.m.</p>
           </div>
         </div>
       </div>
