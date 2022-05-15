@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap'); */
 
-@media (max-width: 780px) {
-  .parents {
-    font-size: 12px;
-    font-style: italic;
-  }
-}
 .invitationBase {
   display: flex;
   flex-direction: column;
@@ -42,9 +36,10 @@
   /* font-family: 'Dancing Script', cursive; */
 }
 .locationRowBase {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* align-items: center; */
+  gap: 10px;
   margin-top: 40px;
 }
 .locationRow {
@@ -60,4 +55,25 @@
 .locationIcon {
   height: 25px;
   width: 25px;
+}
+
+@media (max-width: 780px) {
+  .parents {
+    font-size: 12px;
+    font-style: italic;
+    width: 100%;
+  }.brideGroomBase{
+    margin: 20px 0;
+  }
+  .locationRowBase {
+    margin-top: 20px;
+  }
+  .locationRow{
+    width: 100%;
+    font-size: 12px;
+  }
+  .locationIcon {
+    width: 18px;
+    height: 18px;
+  }
 }
