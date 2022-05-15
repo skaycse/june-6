@@ -45,7 +45,7 @@ export default function Invitation() {
           <div className={invitationStyles.brideGroomBase}>
             <div className={invitationStyles.brideGroom}>
               <p>{GROOM_NAME}</p>
-              <p>with</p>
+              <p style={{ fontWeight: 600 }}>with</p>
               <p>{BRIDE_NAME}</p>
             </div>
           </div>
