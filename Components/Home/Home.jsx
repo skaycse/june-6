@@ -1,5 +1,5 @@
-import Image from "next/image";
 import styles from "../../styles/Home.module.css";
+import invitationStyles from "../../styles/Invitation.module.css";
 import RightBox from "../CoreComponents/RightBox";
 import DecoratedBorder from "../general/DecoratedBorder";
 import {
@@ -15,14 +15,15 @@ export default function Home() {
       <DecoratedBorder />
 
       <div className={styles.left}>
-        <h1 className={styles.venue}>{new Date(VENUE_DATE).toDateString()}</h1>
+        <h1 className={styles.venue}>Monday, June 06, 2022</h1>
         <div className={styles.groomBrideBase}>
-          <h1 className={styles.groomTitle}>{GROOM_NAME}</h1>
-          <div className={styles.heartImageBase}>
-            <Image src={IMAGE_PATH + "heart.svg"} layout={"fill"} priority />
-            <span className={styles.ambersand}>&</span>
+          <div className={invitationStyles.brideGroomBase}>
+            <div className={invitationStyles.brideGroom}>
+              <p>{GROOM_NAME}</p>
+              <p style={{ fontWeight: 600 }}>with</p>
+              <p>{BRIDE_NAME}</p>
+            </div>
           </div>
-          <h1 className={styles.groomTitle}>{BRIDE_NAME}</h1>
         </div>
       </div>
 
