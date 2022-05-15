@@ -67,6 +67,7 @@
     margin: 20px 0;
   }.brideGroom{
     font-size: clamp(12px, 6vw, 25px);
+    padding: 10px 0;
   }
   .locationRowBase {
     margin-top: 20px;
