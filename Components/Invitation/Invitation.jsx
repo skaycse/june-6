@@ -27,9 +27,9 @@ export default function Invitation() {
       <div className={styles.left}>
         <div className={invitationStyles.invitationBase}>
           <p className={invitationStyles.parents}>
-            Mr. John Doe and Mrs. Jane Doe <br />
-            ABC house Lions Street <br />
-            Mob: 99999999 <br />
+            Mr. A Madhavan and Mrs. Sathy Madhavan <br />
+            Sreenilayam, Edakkatil House, Nayarangadi, P.O. Kallur <br />
+            Mob: 9211015478 <br />
             <span className={invitationStyles.inviteMsg}>
               Cordially invites{" "}
               {userName ? (
@@ -54,8 +54,8 @@ export default function Invitation() {
             className={invitationStyles.parents}
             style={{ textAlign: "right", alignSelf: "end" }}
           >
-            D/o Mr. John Doe and Mrs. Jane Doe <br />
-            ABC house Lions Street <br />
+            D/o Mr. P Mohandas and Mrs. Kumari Mohandas <br />
+            Perumbily House, PO Kallur <br />
             {/* Mob: 99999999 */}
           </p>
         </div>
@@ -65,21 +65,22 @@ export default function Invitation() {
             <div className={invitationStyles.locationIcon}>
               <img src={IMAGE_PATH + "calendar.svg"} />
             </div>
-            <p>On Monday,June 02, 2022</p>
+            <p>On Monday,June 06, 2022</p>
           </div>
 
           <div className={invitationStyles.locationRow}>
             <div className={invitationStyles.locationIcon}>
               <img src={IMAGE_PATH + "location.svg"} />
             </div>
-            <p>at Avenue park Thrissur</p>
+            <p>at Sree Shanmukha Mandapam
+              Nayarangadi</p>
           </div>
 
           <div className={invitationStyles.locationRow}>
             <div className={invitationStyles.locationIcon}>
               <img src={IMAGE_PATH + "clock.svg"} />
             </div>
-            <p>from 5:00pm to 6:00pm</p>
+            <p>from 9:00am to 10:00am</p>
           </div>
         </div>
       </div>
